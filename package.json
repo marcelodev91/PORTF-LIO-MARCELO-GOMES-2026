@@ -1,0 +1,21 @@
+{
+  "name": "marcelo-gomes-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio de edição de vídeo para Marcelo Gomes",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --loader:.js=jsx --jsx=automatic",
+    "start": "http-server ./ -p 8080"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.23.0",
+    "http-server": "^14.1.1",
+    "typescript": "^5.5.4"
+  }
+}
